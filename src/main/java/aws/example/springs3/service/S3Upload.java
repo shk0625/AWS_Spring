@@ -15,7 +15,7 @@ import java.util.UUID;
 @Service
 public class S3Upload {
 
-    @Value("$(cloud.aws.s3.bucket}")
+    @Value("${cloud.aws.s3.bucket}")
     private String bucket;
 
     private final AmazonS3 amazonS3;

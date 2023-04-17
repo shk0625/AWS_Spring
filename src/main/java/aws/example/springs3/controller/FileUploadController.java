@@ -17,7 +17,7 @@ public class FileUploadController {
     private final S3Upload s3Upload;
 
     @PostMapping("/upload")
-    public <ApiResponse> ApiResponse<String> uploadFile(@RequestParam("images")MultipartFile multipartFile)
+    public ApiResponse<String> uploadFile(@RequestParam("images") MultipartFile multipartFile)
         throws IOException {
         return ApiResponse.success(HttpStatus.CREATED, s3Upload.upload(multipartFile.getInputStream(),
                 multipartFile.getOriginalFilename(), fileSize));
