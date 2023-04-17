@@ -5,7 +5,7 @@ cloud:
       secretKey: ${NmG83QTtAVo0gpmDY9uu45L8qNBkedJmCq1J56Pm}   # AWS IAM SecretKey ??
     s3:
       bucket: spring-photo-s3    # ex) marryting-gyunny
-      dir: /save # ex) /gyunny
+      dir: /spring-s3 # ex) /gyunny
     region:
       static: ap-northeast-2
     stack:
